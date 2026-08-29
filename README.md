@@ -1,6 +1,6 @@
 # MIT 201: Advanced Data Structures and Algorithm Analysis
 
-Python and C++ solutions, tests, and study notes for MIT 201 activities and
+Python solutions, tests, and study notes for MIT 201 activities and
 requirements.
 
 ## Course progress
@@ -8,7 +8,7 @@ requirements.
 | Chapter | Topic | Language | Status |
 |---|---|---|---|
 | [Chapter 1](chapter-01/README.md) | Overview of Data Structures and Algorithms | Python | Complete |
-| [Chapter 2](chapter-02/README.md) | Addresses, Pointers, Recursion, and Linked Lists | C++ | Complete |
+| [Chapter 2](chapter-02/README.md) | Addresses, Pointers, Recursion, and Linked Lists | Python | Complete |
 
 ## Chapter 1 exercises
 
@@ -23,4 +23,4 @@ requirements.
 3. [Pointer and Address Trace](chapter-02/exercise-03/README.md)
 
 Each exercise folder contains its problem statement, answers, explanation,
-source code, and instructions.
+Python implementation, and instructions.

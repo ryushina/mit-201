@@ -1,25 +1,8 @@
 # Exercise 3: Pointer and Address Trace
 
-## Initial memory diagram
-
-| Variable | Address | Initial data |
-|---|---:|---:|
-| `ptNum` | 500 | blank |
-| `amtAddr` | 564 | blank |
-| `zAddr` | 8024 | 20492 |
-| `numAddr` | 10132 | 18938 |
-| `ptDay` | 14862 | blank |
-| `ptYr` | 15010 | 694 |
-| `years` | 694 | blank |
-| `m` | 8096 | blank |
-| `amt` | 16256 | blank |
-| `firstnum` | 18938 | 154 |
-| `slope` | 20492 | blank |
-| `k` | 24608 | blank |
-
 ## Statements and results
 
-The statements are applied in order.
+The statements are applied in order to the presentation's illustrated memory.
 
 | Statement | Data written or read |
 |---|---|
@@ -31,12 +14,12 @@ The statements are applied in order.
 | `*ptYr = 1987;` | `years` becomes `1987` because `ptYr` stores `694` |
 | `*amtAddr = *numAddr;` | `amt` becomes `154` |
 
-## Final data
+## Python implementation
 
-`ptNum = 8096`, `amtAddr = 16256`, `zAddr = 20492`, `numAddr = 18938`,
-`ptDay = 20492`, `ptYr = 694`, `years = 1987`, `amt = 154`, `firstnum = 154`,
-`slope = 25`, and `k = 154`.
+[`pointer_address_trace.py`](pointer_address_trace.py) represents memory as a
+dictionary whose keys are the illustrated addresses. A second dictionary stores
+the pointer values. This preserves the pointer relationships without claiming
+that Python provides C++-style raw pointers.
 
-The numerical addresses above come from the presentation's illustration. A
-real C++ program receives actual addresses from the runtime, so the source code
-also prints the conceptual illustrated address values separately.
+Final values: `ptNum = 8096`, `amtAddr = 16256`, `ptDay = 20492`,
+`years = 1987`, `amt = 154`, `slope = 25`, and `k = 154`.

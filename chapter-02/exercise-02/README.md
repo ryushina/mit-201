@@ -1,6 +1,6 @@
 # Exercise 2: Pointer Declaration Statements
 
-## Answers
+## Required written answers
 
 ```cpp
 int* yAddr;
@@ -13,11 +13,11 @@ int* datePt;
 double* yldAddr;
 ```
 
-The type before `*` is the type of value to which the pointer points. These
-declarations create pointer variables; they do not yet make the pointers refer
-to valid objects.
+These declarations answer the C++ syntax requested by the presentation.
 
-## Source
+## Python implementation
 
-[`pointer_declarations.cpp`](pointer_declarations.cpp) provides safe example
-initializations for all eight declarations and verifies their types.
+Python does not declare typed pointers. Names automatically refer to objects,
+and optional type hints describe values rather than raw pointers.
+[`pointer_declarations.py`](pointer_declarations.py) demonstrates the
+corresponding Python references and verifies their runtime value types.

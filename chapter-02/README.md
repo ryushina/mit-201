@@ -10,17 +10,14 @@ pointers section.
 2. [Pointer declarations](exercise-02/README.md)
 3. [Pointer and address trace](exercise-03/README.md)
 
-The source programs use standard C++17 and include assertions that verify the
-answers.
+The written answers retain the pointer syntax required by the presentation.
+The executable implementations use Python references and a simulated memory
+dictionary because Python does not expose C++-style `&` and `*` operators.
 
-## Compile and run
+## Run
 
 ```bash
-g++ -std=c++17 -Wall -Wextra -pedantic chapter-02/exercise-01/indirection_expressions.cpp -o exercise1
-g++ -std=c++17 -Wall -Wextra -pedantic chapter-02/exercise-02/pointer_declarations.cpp -o exercise2
-g++ -std=c++17 -Wall -Wextra -pedantic chapter-02/exercise-03/pointer_address_trace.cpp -o exercise3
-
-./exercise1
-./exercise2
-./exercise3
+python chapter-02/exercise-01/indirection_expressions.py
+python chapter-02/exercise-02/pointer_declarations.py
+python chapter-02/exercise-03/pointer_address_trace.py
 ```
